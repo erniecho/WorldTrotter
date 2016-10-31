@@ -42,7 +42,7 @@
                                 </constraints>
                                 <color key="textColor" red="0.88235294117647056" green="0.34509803921568627" blue="0.16078431372549018" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="70"/>
-                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="decimalPad"/>
                                 <connections>
                                     <action selector="fahreheitFieldEditingChangedWithTextField:" destination="BYZ-38-t0r" eventType="editingChanged" id="WCB-o2-siz"/>
                                 </connections>
@@ -67,6 +67,9 @@
                             <constraint firstItem="5hR-PL-sat" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="v0f-zV-6kB"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="celsiusLabel" destination="fc6-Nk-Gvz" id="rdX-FW-Sax"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
