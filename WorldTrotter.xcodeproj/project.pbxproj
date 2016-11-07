@@ -297,6 +297,7 @@
 				E3C6846C1DC6D78C00813CA8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
