@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ConversionViewController: UIViewController {
+class ConversionViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet var celsiusLabel: UILabel!
     @IBOutlet var textField: UITextField!
@@ -53,16 +53,21 @@ class ConversionViewController: UIViewController {
             fahrenheitValue = value
         }
         else {
-            
+            fahrenheitValue = nil
         }
-        fahrenheitValue = nil
     }
-    
     
     
     @IBAction func dismissKeyboard(sender: AnyObject) {
         textField.resignFirstResponder()
     }
     
+    private func textField(textField: UITextField,
+                   shouldChangeCharacterInRange range: NSRange,
+                   replacementString string: String) -> Bool {
+        print("Current text: \(textField.text)")
+        print("Replacement text: \(string)")
+        return true
+    }
     
 }
