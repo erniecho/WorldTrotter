@@ -84,7 +84,7 @@
         <!--View Controller-->
         <scene sceneID="RWP-IE-QQC">
             <objects>
-                <viewController title="View Controller" id="qwu-gE-2mp" sceneMemberID="viewController">
+                <viewController title="View Controller" id="qwu-gE-2mp" customClass="MapViewController" customModule="WorldTrotter" customModuleProvider="target" sceneMemberID="viewController">
                     <mapView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" id="F9s-W6-O7M">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
