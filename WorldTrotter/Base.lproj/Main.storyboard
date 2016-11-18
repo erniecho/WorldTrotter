@@ -106,8 +106,8 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="qwu-gE-2mp" kind="relationship" relationship="viewControllers" id="ocR-Aa-FPu"/>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="1u7-qd-U14"/>
+                        <segue destination="qwu-gE-2mp" kind="relationship" relationship="viewControllers" id="ocR-Aa-FPu"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0p0-OP-ecX" userLabel="First Responder" sceneMemberID="firstResponder"/>
