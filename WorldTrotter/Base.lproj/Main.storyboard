@@ -81,14 +81,10 @@
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="137.18140929535232"/>
         </scene>
-        <!--View Controller-->
+        <!--Map View Controller-->
         <scene sceneID="RWP-IE-QQC">
             <objects>
-                <viewController title="View Controller" id="qwu-gE-2mp" customClass="MapViewController" customModule="WorldTrotter" customModuleProvider="target" sceneMemberID="viewController">
-                    <mapView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" id="F9s-W6-O7M">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    </mapView>
+                <viewController title="Map View Controller" id="qwu-gE-2mp" customClass="MapViewController" customModule="WorldTrotter" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Map" image="MapIcon" id="0Jk-xF-86U"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yCi-2h-Opd" userLabel="First Responder" sceneMemberID="firstResponder"/>
