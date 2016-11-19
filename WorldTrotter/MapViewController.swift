@@ -18,9 +18,30 @@ class MapViewController: UIViewController {
         mapView = MKMapView()
         
         // Set it as *the* view of this view controller
-        
         view = mapView
         
+        // UI Control for map
+        let segmentedControl
+            = UISegmentedControl(items: ["Standard","Hybrid","Satelite"])
+        segmentedControl.backgroundColor
+        = UIColor.white.withAlphaComponent(0.5)
+        segmentedControl.selectedSegmentIndex = 0
+        segmentedControl.translatesAutoresizingMaskIntoConstraints = false
+        
+        //Anchors settings for autolayout.
+        let topConstraint
+        = segmentedControl.topAnchor.constraint(equalTo: view.topAnchor)
+        let leadingContraint
+        = segmentedControl.leadingAnchor.constraint(equalTo: view.leadingAnchor)
+        let trailingConstraint
+        = segmentedControl.trailingAnchor.constraint(equalTo: view.trailingAnchor)
+        
+        topConstraint.isActive = true
+        leadingContraint.isActive = true
+        trailingConstraint.isActive = true
+        
+        //added control overlay over map.
+        view.addSubview(segmentedControl)
     }
     
     
