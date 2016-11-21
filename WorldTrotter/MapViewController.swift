@@ -26,6 +26,11 @@ class MapViewController: UIViewController {
         segmentedControl.backgroundColor
         = UIColor.white.withAlphaComponent(0.5)
         segmentedControl.selectedSegmentIndex = 0
+        
+        // Programmatic Control pg 105 need to edit out some code.
+        segmentedControl.addTarget(self, action: #selector(mapTypeChanged), for: .valueChanged)
+        
+        // disable autolayout default settings.
         segmentedControl.translatesAutoresizingMaskIntoConstraints = false
         
         //added control overlay over map.
@@ -48,8 +53,19 @@ class MapViewController: UIViewController {
         trailingConstraint.isActive = true
         
         }
-    
-    
+    // Switch for maptype control. pg 105
+    func mapTypeChanged(_ segControl: UISegmentedControl) {
+        switch segControl.selectedSegmentIndex {
+        case 0:
+            mapView.mapType = .standard
+        case 1:
+            mapView.mapType = .hybrid
+        case 2:
+            mapView.mapType = .satellite
+        default:
+            break
+        }
+    }
     override func viewDidLoad() {
         // Always call the super implementation of viewDidLoad
         super.viewDidLoad()
