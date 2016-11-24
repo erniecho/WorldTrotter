@@ -70,8 +70,15 @@ class ConversionViewController: UIViewController, UITextFieldDelegate {
     }
     
     @nonobjc func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
-        let existingTextHasDecimalSeparator = textField.text?.range(of: ".")
-        let replacementTextHasDecimalSeparator = string.range(of: ".")
+        
+        // User's region setting is returned.
+        let currentLocale = NSLocale.current
+        let decimalSeparator =
+            currentLocale.decimalSeparator
+        
+        let existingTextHasDecimalSeparator
+            = textField.text?.range(of: decimalSeparator!)
+        let replacementTextHasDecimalSeparator = string.range(of: decimalSeparator!) //using this ! tells your using a object property.
         
         if existingTextHasDecimalSeparator != nil && replacementTextHasDecimalSeparator != nil {
             return false
