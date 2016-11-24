@@ -56,8 +56,9 @@ class ConversionViewController: UIViewController, UITextFieldDelegate {
     
     
     @IBAction func fahreheitFieldEditingChanged(textField: UITextField) {
-        if let text = textField.text , let value = Double(text) {
-            fahrenheitValue = value
+        if let text = textField.text, let number = numberFormatter.number(from: text) {
+            fahrenheitValue = number.doubleValue
+        
         }
         else {
             fahrenheitValue = nil
