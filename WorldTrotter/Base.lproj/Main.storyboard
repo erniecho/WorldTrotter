@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -56,15 +57,23 @@
                         <color key="backgroundColor" red="0.96078431372549022" green="0.95686274509803915" blue="0.94509803921568625" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="OJW-xe-S0e" firstAttribute="top" secondItem="5hR-PL-sat" secondAttribute="bottom" constant="8" id="169-9w-KYg"/>
-                            <constraint firstItem="psy-9F-5wi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1nn-eB-xxx"/>
                             <constraint firstItem="fc6-Nk-Gvz" firstAttribute="top" secondItem="OJW-xe-S0e" secondAttribute="bottom" constant="8" id="4XM-Ty-UWx"/>
                             <constraint firstItem="hte-hE-yGs" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="7dG-Ug-gRG"/>
-                            <constraint firstItem="psy-9F-5wi" firstAttribute="top" secondItem="fc6-Nk-Gvz" secondAttribute="bottom" constant="8" id="P1j-A8-Dne"/>
+                            <constraint firstItem="5hR-PL-sat" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="O4H-vk-K49"/>
+                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="OJW-xe-S0e" secondAttribute="trailing" id="PNy-Vr-BSK"/>
+                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="fc6-Nk-Gvz" secondAttribute="trailing" id="Qur-n4-bDI"/>
                             <constraint firstItem="fc6-Nk-Gvz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="S3X-MA-L1d"/>
+                            <constraint firstItem="psy-9F-5wi" firstAttribute="top" secondItem="fc6-Nk-Gvz" secondAttribute="bottom" constant="8" id="VrB-Jz-PJB"/>
+                            <constraint firstItem="psy-9F-5wi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bEZ-bZ-uXe"/>
                             <constraint firstItem="5hR-PL-sat" firstAttribute="top" secondItem="hte-hE-yGs" secondAttribute="bottom" constant="8" id="fPB-Qk-f7E"/>
+                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="psy-9F-5wi" secondAttribute="trailing" id="gPI-0u-R7k"/>
+                            <constraint firstItem="psy-9F-5wi" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="igm-tv-ivj"/>
                             <constraint firstItem="hte-hE-yGs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ivR-ky-8PN"/>
+                            <constraint firstItem="OJW-xe-S0e" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="lBh-C9-btT"/>
                             <constraint firstItem="OJW-xe-S0e" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qdq-gf-eTF"/>
+                            <constraint firstItem="fc6-Nk-Gvz" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="rbj-Pa-eO0"/>
                             <constraint firstItem="5hR-PL-sat" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="v0f-zV-6kB"/>
+                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="5hR-PL-sat" secondAttribute="trailing" id="vK9-Io-9Jr"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Convert" image="ConvertIcon" id="cGk-rs-EEk"/>
